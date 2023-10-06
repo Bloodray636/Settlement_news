@@ -1,0 +1,130 @@
+.root
+    $link-color: rgb(1, 135, 255)
+    $bg-color: #fff
+    $bg-color-2: rgb(255, 255, 255)
+    $text-color: #000
+    $bg-block: $link-color
+    $active: $link-color
+    $bg-text: #fff
+    $line-color: #DDE1E6
+    $date-color: #848E99
+    $bg-menu: rgba(1, 135, 255, 0.07)
+    $border-color: $link-color
+
+hr
+    background-color: $line-color
+
+h1, h2, h3, h4, h5, h6
+    color: $text-color
+
+a
+    color: $link-color!important
+
+main .title svg path, .news .title svg path, .project-events .title svg path, .gallery .title svg path
+    fill: $link-color
+
+.top-menu
+    background-color: $link-color
+    a
+        color: $bg-text!important
+        svg path
+            fill: $bg-color-2
+
+.slogan h1
+    color: $bg-text
+
+.navbar
+    background-color: $link-color
+
+.navbar .nav-item .nav-link
+    color: $bg-text!important
+
+.navbar .nav-item .dropdown-toggle::after 
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M9.84992 0.631339L9.48839 0.26974C9.28897 0.0700674 8.96489 0.0700674 8.76509 0.26974L5.00467 3.98291L1.23453 0.213267C1.03476 0.0136276 0.710846 0.0136276 0.511239 0.213267L0.149705 0.574801C-0.0499018 0.774539 -0.0499018 1.09807 0.149705 1.29784L4.63851 5.78661C4.83811 5.98644 5.16177 5.98644 5.36161 5.78661L9.84992 1.35428C10.05 1.15464 10.05 0.830978 9.84992 0.631339Z' fill='#{$bg-color-2}'/></svg>") !important
+    
+.navbar .navbar-toggler
+        border: 1px solid $bg-text
+        svg path
+            fill: $bg-color 
+
+form .btn, .news .btn, .navbar .nav-item .dropdown-menu .dropdown-item:hover 
+    background-color: $link-color !important
+    color: $bg-text !important
+
+form .btn.btn-second
+    background-color: $bg-color !important
+    color: $link-color !important
+    border: 1px solid $link-color
+
+.dropdown-menu .nav-item .dropdown-toggle::after
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M9.84992 0.631339L9.48839 0.26974C9.28897 0.0700674 8.96489 0.0700674 8.76509 0.26974L5.00467 3.98291L1.23453 0.213267C1.03476 0.0136276 0.710846 0.0136276 0.511239 0.213267L0.149705 0.574801C-0.0499018 0.774539 -0.0499018 1.09807 0.149705 1.29784L4.63851 5.78661C4.83811 5.98644 5.16177 5.98644 5.36161 5.78661L9.84992 1.35428C10.05 1.15464 10.05 0.830978 9.84992 0.631339Z' fill='#{$link-color}'/></svg>")!important
+  
+.dropdown-menu .nav-item:hover .dropdown-toggle::after
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M9.84992 0.631339L9.48839 0.26974C9.28897 0.0700674 8.96489 0.0700674 8.76509 0.26974L5.00467 3.98291L1.23453 0.213267C1.03476 0.0136276 0.710846 0.0136276 0.511239 0.213267L0.149705 0.574801C-0.0499018 0.774539 -0.0499018 1.09807 0.149705 1.29784L4.63851 5.78661C4.83811 5.98644 5.16177 5.98644 5.36161 5.78661L9.84992 1.35428C10.05 1.15464 10.05 0.830978 9.84992 0.631339Z' fill='#{$bg-color-2}'/></svg>") !important
+  
+.left-menu .accordion-header .accordion-button::after
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='9' height='6' viewBox='0 0 9 6' fill='none'><g clip-path='url(%23clip0_1149_126)'><path d='M8.86493 0.631339L8.53955 0.26974C8.36008 0.0700674 8.06841 0.0700674 7.88858 0.26974L4.5042 3.98291L1.11108 0.213267C0.931288 0.0136276 0.639762 0.0136276 0.460115 0.213267L0.134735 0.574801C-0.0449116 0.774539 -0.0449116 1.09807 0.134735 1.29784L4.17466 5.78661C4.3543 5.98644 4.6456 5.98644 4.82545 5.78661L8.86493 1.35428C9.04501 1.15464 9.04501 0.830978 8.86493 0.631339Z' fill='black'/></g><defs><clipPath id='clip0_1149_126'><rect width='9' height='6' fill='white'/></clipPath></defs></svg>") !important
+  
+    
+.left-menu
+    background-color: $bg-menu
+    .navbar-toggler
+        border: 1px solid $link-color
+        svg path
+            fill: $link-color
+    .accordion-header 
+        .accordion-button
+            color: $text-color
+            &:not(.collapsed)
+                color: $link-color
+    .accordion-body
+        border-right: 1px solid $link-color
+        border-left: 1px solid $link-color
+        ul .list-group-item
+            background-color: $bg-color !important
+            a
+                font-size: 16px !important
+                &::before
+                    background-color: $link-color
+    ul
+        a
+            color: $text-color!important
+
+.news 
+    .card 
+        .card-header, .card-footer
+            background-color: $bg-color
+    .card-footer 
+        .link-post
+            color: $link-color!important
+        .date
+            color: $date-color
+    .title .date
+        color: $date-color
+
+.news-read 
+    svg path
+        fill: $link-color !important
+
+.footer
+    background-color: $bg-menu
+    h1
+        color: $text-color
+        span
+            color: $text-color
+    .list-group-item
+        a
+            color: $text-color !important
+            &:hover
+                color: $link-color!important
+                border-bottom: 1px solid $link-color
+
+form
+    .form-control
+        &:focus
+            border-color: $link-color
+    .form-check
+        .form-check-input
+            &:checked
+                background-color: $link-color !important
+                border: 1px solid $link-color!important
